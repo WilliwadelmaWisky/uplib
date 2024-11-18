@@ -17,7 +17,7 @@ Version 1.0.0
 Uses the standard uncertainty propagation method and is very useful for calculating a realistic error value at a certain point. A good way of calculating an uncertainty of a variable.
 
 **Assignment:**
-Calculate an uncertainty of a function `f(x, y) = x^2 * y^2` at `x = (1.0 ± 0.2)` and `y = (2.0 ± 0.3)` using a standard uncertainty propagation method.
+Calculate an uncertainty of a function $f(x, y) = x^2 \cdot y^2$ at $x = (1.0 \pm 0.2)$ and $y = (2.0 \pm 0.3)$ using a standard uncertainty propagation method.
 
 **Answer:**
 ```python
@@ -37,7 +37,7 @@ err = standard(f, point, point_err)
 Uses the minmax uncertainty propagation method. It is very handy for quickly determining maximum value the error can be. Not ideal for calculating realistic uncertainties, use standard instead for that.
 
 **Assignment:** 
-Calculate an uncertainty of a function `f(x, y) = x^2 * y^2` at `x = (1.0 ± 0.2)` and `y = (2.0 ± 0.3)` using a minmax uncertainty propagation method.
+Calculate an uncertainty of a function $f(x, y) = x^2 \cdot y^2$ at $x = (1.0 \pm 0.2)$ and $y = (2.0 \pm 0.3)$ using a minmax uncertainty propagation method.
 
 **Answer:**
 ```python
@@ -54,10 +54,10 @@ err = minmax(f, point, point_err)
 ```
 
 ### Origin Error
-Uses graphical methods to calculate the error at the origin (x = 0). It is very useful for quickly testing if a systematic error occurs in the measuring equipment.
+Uses graphical methods to calculate the error at the origin $(x = 0)$. It is very useful for quickly testing if a systematic error occurs in the measuring equipment.
 
 **Assignemt:** 
-Calculate an uncertainty of the origin of a function `f(x) = 2x`. 
+Calculate an uncertainty of the origin of a function $f(x) = 2x$. 
 The data of the measurements are in the following table.
 
 |   x   |   y   |
