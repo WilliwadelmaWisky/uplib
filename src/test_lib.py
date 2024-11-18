@@ -1,4 +1,4 @@
-from src.uplib import minmax, standard, origin_error
+from lib import minmax, standard, origin_error, partial_df
 from numpy import array
 from math import isclose
 
@@ -34,3 +34,13 @@ def test_origin_error() -> None:
     assert isclose(origin_error(lambda x, a, b: a * x + b, array([1, 2, 3]), array([1, 1.5, 2])), 0.5, abs_tol=0.01)
     assert isclose(origin_error(lambda x, a, b: a * x ** 2 + b, array([1, 2, 3]), array([2, 5, 10])), 1.0, abs_tol=0.01)
     assert isclose(origin_error(lambda x, b: 2 * x + b, array([1, 2, 3]), array([3, 5, 7])), 1.0, abs_tol=0.01)
+
+
+def test_partial_df() -> None:
+    """
+    A couple of tests for partial_df
+    :return:
+    """
+    f = lambda x, y: x**2 + y**2
+    assert isclose(partial_df(f, array([1, 2]), 0), 2, abs_tol=0.01)
+    assert isclose(partial_df(f, array([1, 2]), 1), 4, abs_tol=0.01)
