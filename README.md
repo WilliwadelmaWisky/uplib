@@ -10,8 +10,6 @@
 - There is no PyPI package available!
 
 ## Getting Started
-
-
 ### Dependencies
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=flat&logo=numpy&logoColor=white)
 ![SciPy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=flat&logo=scipy&logoColor=%white)
