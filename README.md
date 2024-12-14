@@ -30,7 +30,7 @@ git clone https://github.com/WilliwadelmaWisky/uplib.git
 Copy `lib.py` file to your project.
 
 ## Features
-> ![NOTE]
+> [!NOTE]
 > The import statements used in the examples may vary depending on where the files are located!
 
 ### Standard
