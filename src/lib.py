@@ -46,7 +46,7 @@ def minmax(func: Callable[[ndarray], float], point: ndarray | int | float, err: 
 
     max_error_index = where(ferrors == max_error)[0][0]
     max_error_config = val_configs[max_error_index]
-    return err, max_error_config
+    return max_error, max_error_config
 
 
 def standard(func: Callable[[ndarray], float], point: ndarray | int | float, point_err: ndarray | int | float) -> float:
